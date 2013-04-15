@@ -125,14 +125,6 @@
 		CF2A6127171C3F3100641D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6126171C3F3100641D2D /* UIKit.framework */; };
 		CF2A6129171C3F3200641D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6128171C3F3100641D2D /* Foundation.framework */; };
 		CF2A612B171C3F3200641D2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A612A171C3F3200641D2D /* CoreGraphics.framework */; };
-		CF2A6131171C3F3200641D2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF2A612F171C3F3200641D2D /* InfoPlist.strings */; };
-		CF2A6133171C3F3200641D2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A6132171C3F3200641D2D /* main.m */; };
-		CF2A6137171C3F3200641D2D /* VTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A6136171C3F3200641D2D /* VTAppDelegate.m */; };
-		CF2A6139171C3F3200641D2D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2A6138171C3F3200641D2D /* Default.png */; };
-		CF2A613B171C3F3200641D2D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2A613A171C3F3200641D2D /* Default@2x.png */; };
-		CF2A613D171C3F3200641D2D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2A613C171C3F3200641D2D /* Default-568h@2x.png */; };
-		CF2A6140171C3F3200641D2D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2A613E171C3F3200641D2D /* MainStoryboard.storyboard */; };
-		CF2A6143171C3F3200641D2D /* VTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF2A6142171C3F3200641D2D /* VTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -258,18 +250,6 @@
 		CF2A6126171C3F3100641D2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF2A6128171C3F3100641D2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF2A612A171C3F3200641D2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CF2A612E171C3F3200641D2D /* fritidsresor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fritidsresor-Info.plist"; sourceTree = "<group>"; };
-		CF2A6130171C3F3200641D2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CF2A6132171C3F3200641D2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF2A6134171C3F3200641D2D /* fritidsresor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fritidsresor-Prefix.pch"; sourceTree = "<group>"; };
-		CF2A6135171C3F3200641D2D /* VTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTAppDelegate.h; sourceTree = "<group>"; };
-		CF2A6136171C3F3200641D2D /* VTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTAppDelegate.m; sourceTree = "<group>"; };
-		CF2A6138171C3F3200641D2D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CF2A613A171C3F3200641D2D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CF2A613C171C3F3200641D2D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CF2A613F171C3F3200641D2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CF2A6141171C3F3200641D2D /* VTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTViewController.h; sourceTree = "<group>"; };
-		CF2A6142171C3F3200641D2D /* VTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,7 +403,6 @@
 			isa = PBXGroup;
 			children = (
 				AE3AFAF1171C4C26000D6F79 /* fritidsresor */,
-				CF2A612C171C3F3200641D2D /* fritidsresor */,
 				CF2A6125171C3F3100641D2D /* Frameworks */,
 				CF2A6124171C3F3100641D2D /* Products */,
 			);
@@ -445,33 +424,6 @@
 				CF2A612A171C3F3200641D2D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CF2A612C171C3F3200641D2D /* fritidsresor */ = {
-			isa = PBXGroup;
-			children = (
-				CF2A6135171C3F3200641D2D /* VTAppDelegate.h */,
-				CF2A6136171C3F3200641D2D /* VTAppDelegate.m */,
-				CF2A613E171C3F3200641D2D /* MainStoryboard.storyboard */,
-				CF2A6141171C3F3200641D2D /* VTViewController.h */,
-				CF2A6142171C3F3200641D2D /* VTViewController.m */,
-				CF2A612D171C3F3200641D2D /* Supporting Files */,
-			);
-			path = fritidsresor;
-			sourceTree = "<group>";
-		};
-		CF2A612D171C3F3200641D2D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CF2A612E171C3F3200641D2D /* fritidsresor-Info.plist */,
-				CF2A612F171C3F3200641D2D /* InfoPlist.strings */,
-				CF2A6132171C3F3200641D2D /* main.m */,
-				CF2A6134171C3F3200641D2D /* fritidsresor-Prefix.pch */,
-				CF2A6138171C3F3200641D2D /* Default.png */,
-				CF2A613A171C3F3200641D2D /* Default@2x.png */,
-				CF2A613C171C3F3200641D2D /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,11 +478,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2A6131171C3F3200641D2D /* InfoPlist.strings in Resources */,
-				CF2A6139171C3F3200641D2D /* Default.png in Resources */,
-				CF2A613B171C3F3200641D2D /* Default@2x.png in Resources */,
-				CF2A613D171C3F3200641D2D /* Default-568h@2x.png in Resources */,
-				CF2A6140171C3F3200641D2D /* MainStoryboard.storyboard in Resources */,
 				AE3AFB6B171C4C26000D6F79 /* Default-568h@2x.png in Resources */,
 				AE3AFB6C171C4C26000D6F79 /* Default.png in Resources */,
 				AE3AFB6D171C4C26000D6F79 /* Default@2x.png in Resources */,
@@ -653,9 +600,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF2A6133171C3F3200641D2D /* main.m in Sources */,
-				CF2A6137171C3F3200641D2D /* VTAppDelegate.m in Sources */,
-				CF2A6143171C3F3200641D2D /* VTViewController.m in Sources */,
 				AE3AFBDB171C4C26000D6F79 /* main.m in Sources */,
 				AE3AFBDC171C4C26000D6F79 /* VTAppDelegate.m in Sources */,
 				AE3AFBDD171C4C26000D6F79 /* VTViewController.m in Sources */,
@@ -677,22 +621,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				AE3AFAF8171C4C26000D6F79 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
-		CF2A612F171C3F3200641D2D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF2A6130171C3F3200641D2D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CF2A613E171C3F3200641D2D /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF2A613F171C3F3200641D2D /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";

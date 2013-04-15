@@ -38,7 +38,7 @@
         <scene sceneID="Acp-Gw-0og">
             <objects>
                 <navigationController definesPresentationContext="YES" id="BfA-7D-NLa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" image="Images/tab_savedsearches@2x.png" id="cTJ-95-fAT"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite.png" id="cTJ-95-fAT"/>
                     <navigationItem key="navigationItem" id="9Ys-aQ-jS6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pdo-Lc-z2Q">
                         <autoresizingMask key="autoresizingMask"/>
@@ -104,7 +104,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Images/tab_savedsearches@2x.png" width="16" height="16"/>
+        <image name="favorite.png" width="44" height="39"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
