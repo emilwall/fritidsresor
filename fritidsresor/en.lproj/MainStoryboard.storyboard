@@ -124,7 +124,13 @@
                                     <constraint firstItem="1id-ZJ-1WX" firstAttribute="top" secondItem="e9R-SJ-eUw" secondAttribute="top" constant="14" id="z2J-dc-oD2"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="alertLabel" destination="T8v-j8-7gR" id="g4S-NB-hQt"/>
                                     <outlet property="countryLabel" destination="Ban-iy-2hq" id="v1r-5e-izn"/>
+                                    <outlet property="dayLabel" destination="1id-ZJ-1WX" id="NvA-gP-cF9"/>
+                                    <outlet property="detailsLabel" destination="Dt8-XZ-uD5" id="HFK-9G-fZM"/>
+                                    <outlet property="monthLabel" destination="yf4-st-oMy" id="0vE-ZQ-9Ei"/>
+                                    <outlet property="priceLabel" destination="dz5-TI-ETf" id="MlC-y3-CnI"/>
+                                    <outlet property="travelTypeLabel" destination="dw7-vC-iJ6" id="OEP-Pc-UEk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -266,7 +272,13 @@
         <class className="VTCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VTCell.h"/>
             <relationships>
+                <relationship kind="outlet" name="alertLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="countryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="detailsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="monthLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="travelTypeLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="VTTableViewController" superclassName="UITableViewController">

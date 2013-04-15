@@ -12,4 +12,16 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *countryLabel;
 
+@property (nonatomic, strong) IBOutlet UILabel *monthLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *dayLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *priceLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *travelTypeLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *detailsLabel;
+
+@property (nonatomic, strong) IBOutlet UILabel *alertLabel;
+
 @end
