@@ -65,7 +65,7 @@
         <scene sceneID="ACI-0e-Dlv">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xbP-pE-Gce" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sista minuten" image="tab_lastminute.png" id="aR9-62-bXc"/>
+                    <tabBarItem key="tabBarItem" title="Sista minuten" image="flygtest.png" id="aR9-62-bXc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNn-uO-84d">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -148,8 +148,8 @@
     </scenes>
     <resources>
         <image name="favorite.png" width="44" height="39"/>
+        <image name="flygtest.png" width="49" height="34"/>
         <image name="tab_about.png" width="81" height="49"/>
-        <image name="tab_lastminute.png" width="81" height="49"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
