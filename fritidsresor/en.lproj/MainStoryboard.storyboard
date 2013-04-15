@@ -7,20 +7,37 @@
         <!--Table View Controller - Fritidsresor - Sista minuten-->
         <scene sceneID="H8I-yx-4Co">
             <objects>
-                <tableViewController id="eWa-lH-g8w" sceneMemberID="viewController">
+                <tableViewController id="eWa-lH-g8w" customClass="VTTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uL4-U7-Bvz">
                         <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e9R-SJ-eUw" customClass="VTCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="e9R-SJ-eUw" customClass="VTCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Land" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ban-iy-2hq">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="42" id="cu3-45-5XL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="Ban-iy-2hq" firstAttribute="top" secondItem="e9R-SJ-eUw" secondAttribute="top" constant="11" id="hoP-dz-iRh"/>
+                                    <constraint firstItem="Ban-iy-2hq" firstAttribute="leading" secondItem="e9R-SJ-eUw" secondAttribute="leading" constant="42" id="swP-9a-QuC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="countryLabel" destination="Ban-iy-2hq" id="v1r-5e-izn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                     </tableView>
@@ -34,7 +51,7 @@
         <scene sceneID="pRb-Dh-4Of">
             <objects>
                 <navigationController definesPresentationContext="YES" id="5Gq-It-ZsW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Om appen" image="ok@2x.png" id="qBM-Dq-oTN"/>
+                    <tabBarItem key="tabBarItem" title="Om appen" image="icon_white_house@2x.png" id="qBM-Dq-oTN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2cU-Mg-CiS">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -65,7 +82,7 @@
         <scene sceneID="ACI-0e-Dlv">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xbP-pE-Gce" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sista minuten" image="icon_gray_flight@2x.png" id="aR9-62-bXc"/>
+                    <tabBarItem key="tabBarItem" title="Sista minuten" image="icon_white_flight@2x.png" id="aR9-62-bXc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNn-uO-84d">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -148,12 +165,21 @@
     </scenes>
     <resources>
         <image name="favorite.png" width="44" height="39"/>
-        <image name="icon_gray_flight@2x.png" width="20" height="20"/>
-        <image name="ok@2x.png" width="28" height="28"/>
+        <image name="icon_white_flight@2x.png" width="20" height="20"/>
+        <image name="icon_white_house@2x.png" width="20" height="20"/>
     </resources>
     <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="VTCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VTCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="countryLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="VTTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VTTableViewController.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

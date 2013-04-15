@@ -125,6 +125,7 @@
 		AE3AFBDF171C53C7000D6F79 /* flygtest.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3AFBDE171C53C7000D6F79 /* flygtest.png */; };
 		AE3AFD8F171C564C000D6F79 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3AFD8E171C564C000D6F79 /* about.png */; };
 		AE3AFD92171C584D000D6F79 /* VTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFD91171C584D000D6F79 /* VTCell.m */; };
+		AE3AFD95171C5ADA000D6F79 /* VTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFD94171C5ADA000D6F79 /* VTTableViewController.m */; };
 		CF2A6127171C3F3100641D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6126171C3F3100641D2D /* UIKit.framework */; };
 		CF2A6129171C3F3200641D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6128171C3F3100641D2D /* Foundation.framework */; };
 		CF2A612B171C3F3200641D2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A612A171C3F3200641D2D /* CoreGraphics.framework */; };
@@ -253,6 +254,8 @@
 		AE3AFD8E171C564C000D6F79 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		AE3AFD90171C584D000D6F79 /* VTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCell.h; sourceTree = "<group>"; };
 		AE3AFD91171C584D000D6F79 /* VTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCell.m; sourceTree = "<group>"; };
+		AE3AFD93171C5ADA000D6F79 /* VTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTTableViewController.h; sourceTree = "<group>"; };
+		AE3AFD94171C5ADA000D6F79 /* VTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTTableViewController.m; sourceTree = "<group>"; };
 		CF2A6123171C3F3100641D2D /* fritidsresor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fritidsresor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A6126171C3F3100641D2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF2A6128171C3F3100641D2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -283,7 +286,6 @@
 				AE3AFAF7171C4C26000D6F79 /* MainStoryboard.storyboard */,
 				AE3AFAF9171C4C26000D6F79 /* fritidsresor-Info.plist */,
 				AE3AFAFA171C4C26000D6F79 /* fritidsresor-Prefix.pch */,
-				AE3AFAFB171C4C26000D6F79 /* Images */,
 				AE3AFB66171C4C26000D6F79 /* main.m */,
 				AE3AFB67171C4C26000D6F79 /* VTAppDelegate.h */,
 				AE3AFB68171C4C26000D6F79 /* VTAppDelegate.m */,
@@ -291,6 +293,9 @@
 				AE3AFB6A171C4C26000D6F79 /* VTViewController.m */,
 				AE3AFD90171C584D000D6F79 /* VTCell.h */,
 				AE3AFD91171C584D000D6F79 /* VTCell.m */,
+				AE3AFD93171C5ADA000D6F79 /* VTTableViewController.h */,
+				AE3AFD94171C5ADA000D6F79 /* VTTableViewController.m */,
+				AE3AFAFB171C4C26000D6F79 /* Images */,
 			);
 			path = fritidsresor;
 			sourceTree = "<group>";
@@ -617,6 +622,7 @@
 				AE3AFBDC171C4C26000D6F79 /* VTAppDelegate.m in Sources */,
 				AE3AFBDD171C4C26000D6F79 /* VTViewController.m in Sources */,
 				AE3AFD92171C584D000D6F79 /* VTCell.m in Sources */,
+				AE3AFD95171C5ADA000D6F79 /* VTTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

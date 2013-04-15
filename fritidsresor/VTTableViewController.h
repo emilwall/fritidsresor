@@ -1,5 +1,5 @@
 //
-//  VTCell.h
+//  VTTableViewController.h
 //  fritidsresor
 //
 //  Created by Emil Wall on 4/15/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VTCell : UITableViewCell
-
-@property (nonatomic, strong) IBOutlet UILabel *countryLabel;
+@interface VTTableViewController : UITableViewController
 
 @end
