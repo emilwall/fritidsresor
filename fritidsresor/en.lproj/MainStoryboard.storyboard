@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e9R-SJ-eUw">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="e9R-SJ-eUw" customClass="VTCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -34,7 +34,7 @@
         <scene sceneID="pRb-Dh-4Of">
             <objects>
                 <navigationController definesPresentationContext="YES" id="5Gq-It-ZsW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Om appen" image="tab_about.png" id="qBM-Dq-oTN"/>
+                    <tabBarItem key="tabBarItem" title="Om appen" image="ok@2x.png" id="qBM-Dq-oTN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2cU-Mg-CiS">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -65,7 +65,7 @@
         <scene sceneID="ACI-0e-Dlv">
             <objects>
                 <navigationController definesPresentationContext="YES" id="xbP-pE-Gce" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sista minuten" image="flygtest.png" id="aR9-62-bXc"/>
+                    <tabBarItem key="tabBarItem" title="Sista minuten" image="icon_gray_flight@2x.png" id="aR9-62-bXc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dNn-uO-84d">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -148,9 +148,14 @@
     </scenes>
     <resources>
         <image name="favorite.png" width="44" height="39"/>
-        <image name="flygtest.png" width="49" height="34"/>
-        <image name="tab_about.png" width="81" height="49"/>
+        <image name="icon_gray_flight@2x.png" width="20" height="20"/>
+        <image name="ok@2x.png" width="28" height="28"/>
     </resources>
+    <classes>
+        <class className="VTCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VTCell.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

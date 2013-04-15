@@ -123,6 +123,8 @@
 		AE3AFBDC171C4C26000D6F79 /* VTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFB68171C4C26000D6F79 /* VTAppDelegate.m */; };
 		AE3AFBDD171C4C26000D6F79 /* VTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFB6A171C4C26000D6F79 /* VTViewController.m */; };
 		AE3AFBDF171C53C7000D6F79 /* flygtest.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3AFBDE171C53C7000D6F79 /* flygtest.png */; };
+		AE3AFD8F171C564C000D6F79 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = AE3AFD8E171C564C000D6F79 /* about.png */; };
+		AE3AFD92171C584D000D6F79 /* VTCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFD91171C584D000D6F79 /* VTCell.m */; };
 		CF2A6127171C3F3100641D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6126171C3F3100641D2D /* UIKit.framework */; };
 		CF2A6129171C3F3200641D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6128171C3F3100641D2D /* Foundation.framework */; };
 		CF2A612B171C3F3200641D2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A612A171C3F3200641D2D /* CoreGraphics.framework */; };
@@ -248,6 +250,9 @@
 		AE3AFB69171C4C26000D6F79 /* VTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTViewController.h; sourceTree = "<group>"; };
 		AE3AFB6A171C4C26000D6F79 /* VTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTViewController.m; sourceTree = "<group>"; };
 		AE3AFBDE171C53C7000D6F79 /* flygtest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flygtest.png; sourceTree = "<group>"; };
+		AE3AFD8E171C564C000D6F79 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		AE3AFD90171C584D000D6F79 /* VTCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTCell.h; sourceTree = "<group>"; };
+		AE3AFD91171C584D000D6F79 /* VTCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTCell.m; sourceTree = "<group>"; };
 		CF2A6123171C3F3100641D2D /* fritidsresor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fritidsresor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A6126171C3F3100641D2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF2A6128171C3F3100641D2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -284,6 +289,8 @@
 				AE3AFB68171C4C26000D6F79 /* VTAppDelegate.m */,
 				AE3AFB69171C4C26000D6F79 /* VTViewController.h */,
 				AE3AFB6A171C4C26000D6F79 /* VTViewController.m */,
+				AE3AFD90171C584D000D6F79 /* VTCell.h */,
+				AE3AFD91171C584D000D6F79 /* VTCell.m */,
 			);
 			path = fritidsresor;
 			sourceTree = "<group>";
@@ -291,6 +298,7 @@
 		AE3AFAFB171C4C26000D6F79 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AE3AFD8E171C564C000D6F79 /* about.png */,
 				AE3AFAFC171C4C26000D6F79 /* about_mood.png */,
 				AE3AFBDE171C53C7000D6F79 /* flygtest.png */,
 				AE3AFAFD171C4C26000D6F79 /* about_mood@2x.png */,
@@ -594,6 +602,7 @@
 				AE3AFBD9171C4C26000D6F79 /* wheel_bg@2x.png in Resources */,
 				AE3AFBDA171C4C26000D6F79 /* wheel_shadow@2x.png in Resources */,
 				AE3AFBDF171C53C7000D6F79 /* flygtest.png in Resources */,
+				AE3AFD8F171C564C000D6F79 /* about.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +616,7 @@
 				AE3AFBDB171C4C26000D6F79 /* main.m in Sources */,
 				AE3AFBDC171C4C26000D6F79 /* VTAppDelegate.m in Sources */,
 				AE3AFBDD171C4C26000D6F79 /* VTViewController.m in Sources */,
+				AE3AFD92171C584D000D6F79 /* VTCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
