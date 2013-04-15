@@ -34,11 +34,11 @@
             </objects>
             <point key="canvasLocation" x="-2355" y="469"/>
         </scene>
-        <!--Navigation Controller - Favorites-->
+        <!--Navigation Controller - Bevakningar-->
         <scene sceneID="Acp-Gw-0og">
             <objects>
                 <navigationController definesPresentationContext="YES" id="BfA-7D-NLa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite.png" id="cTJ-95-fAT"/>
+                    <tabBarItem key="tabBarItem" title="Bevakningar" image="favorite.png" id="cTJ-95-fAT"/>
                     <navigationItem key="navigationItem" id="9Ys-aQ-jS6"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pdo-Lc-z2Q">
                         <autoresizingMask key="autoresizingMask"/>
@@ -94,8 +94,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="UPI-ga-emO" kind="relationship" relationship="viewControllers" id="3jv-Zv-20v"/>
-                        <segue destination="1Xk-q1-afS" kind="relationship" relationship="viewControllers" id="pgf-fc-JeN"/>
                         <segue destination="BfA-7D-NLa" kind="relationship" relationship="viewControllers" id="bfB-at-sBh"/>
+                        <segue destination="1Xk-q1-afS" kind="relationship" relationship="viewControllers" id="pgf-fc-JeN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UI2-42-a7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
