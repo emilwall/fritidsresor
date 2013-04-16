@@ -203,7 +203,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aeq-7M-HkL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2443" y="-901"/>
+            <point key="canvasLocation" x="-2424" y="-901"/>
         </scene>
         <!--Table View Controller - Fritidsresor - Bevakningar-->
         <scene sceneID="Z2O-uz-VoS">
@@ -254,7 +254,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UI2-42-a7g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2889" y="-530"/>
+            <point key="canvasLocation" x="-2985" y="-206"/>
         </scene>
     </scenes>
     <resources>
