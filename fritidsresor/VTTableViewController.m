@@ -122,6 +122,12 @@
         cell.alertImage.hidden = FALSE;
     }
     
+    // details label. TODO split into several labels and add images
+    NSString *duration = @"1 vecka";
+    NSString *airport = @"Göteborg";
+    NSString *departure = @"09:05";
+    cell.detailsLabel.text = [NSString stringWithFormat: @"%@ --> %@ ?? Avg. tid %@", duration, airport, departure];
+    
     return cell;
 }
 
