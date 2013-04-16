@@ -144,9 +144,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AE3AFAF2171C4C26000D6F79 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		AE3AFAF3171C4C26000D6F79 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		AE3AFAF4171C4C26000D6F79 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AE3AFAF2171C4C26000D6F79 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE3AFAF3171C4C26000D6F79 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		AE3AFAF4171C4C26000D6F79 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		AE3AFAF6171C4C26000D6F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE3AFAF8171C4C26000D6F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AE3AFAF9171C4C26000D6F79 /* fritidsresor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "fritidsresor-Info.plist"; sourceTree = "<group>"; };
@@ -317,14 +317,7 @@
 			isa = PBXGroup;
 			children = (
 				AE3AFF4F171D65D6000D6F79 /* Communication */,
-				AE3AFAF2171C4C26000D6F79 /* Default-568h@2x.png */,
-				AE3AFAF3171C4C26000D6F79 /* Default.png */,
-				AE3AFAF4171C4C26000D6F79 /* Default@2x.png */,
-				AE3AFAF5171C4C26000D6F79 /* InfoPlist.strings */,
 				AE3AFAF7171C4C26000D6F79 /* MainStoryboard.storyboard */,
-				AE3AFAF9171C4C26000D6F79 /* fritidsresor-Info.plist */,
-				AE3AFAFA171C4C26000D6F79 /* fritidsresor-Prefix.pch */,
-				AE3AFB66171C4C26000D6F79 /* main.m */,
 				AE3AFB67171C4C26000D6F79 /* VTAppDelegate.h */,
 				AE3AFB68171C4C26000D6F79 /* VTAppDelegate.m */,
 				AE3AFB69171C4C26000D6F79 /* VTViewController.h */,
@@ -333,6 +326,7 @@
 				AE3AFD91171C584D000D6F79 /* VTCell.m */,
 				AE3AFD93171C5ADA000D6F79 /* VTTableViewController.h */,
 				AE3AFD94171C5ADA000D6F79 /* VTTableViewController.m */,
+				AE3AFF53171D6721000D6F79 /* Supporting files */,
 				AE3AFEC1171D64B7000D6F79 /* AFNetworking */,
 				AE3AFAFB171C4C26000D6F79 /* Images */,
 			);
@@ -342,6 +336,9 @@
 		AE3AFAFB171C4C26000D6F79 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AE3AFAF2171C4C26000D6F79 /* Default-568h@2x.png */,
+				AE3AFAF3171C4C26000D6F79 /* Default.png */,
+				AE3AFAF4171C4C26000D6F79 /* Default@2x.png */,
 				AE3AFD8E171C564C000D6F79 /* about.png */,
 				AE3AFAFC171C4C26000D6F79 /* about_mood.png */,
 				AE3AFBDE171C53C7000D6F79 /* flygtest.png */,
@@ -488,6 +485,17 @@
 				AE3AFF51171D660D000D6F79 /* VTLastMinuteApiClient.m */,
 			);
 			name = Communication;
+			sourceTree = "<group>";
+		};
+		AE3AFF53171D6721000D6F79 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				AE3AFAF5171C4C26000D6F79 /* InfoPlist.strings */,
+				AE3AFAF9171C4C26000D6F79 /* fritidsresor-Info.plist */,
+				AE3AFAFA171C4C26000D6F79 /* fritidsresor-Prefix.pch */,
+				AE3AFB66171C4C26000D6F79 /* main.m */,
+			);
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 		CF2A611A171C3F3100641D2D = {

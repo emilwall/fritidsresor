@@ -7,6 +7,7 @@
 //
 
 #import "VTTableViewController.h"
+#import "VTLastMinuteApiClient.h"
 
 @interface VTTableViewController ()
 
@@ -26,12 +27,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self callApi:@"airports"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)callApi:(NSString *)selector
+{
+    [[VTLastMinuteApiClient sharedClient] getPath:selector parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        for (NSDictionary *dict in responseObject) {
+            NSLog(@"%@ -> %@", [dict valueForKey:@"code"], [dict valueForKey:@"name"]);
+        }
+        NSLog(@"Success");
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Fail");
+    }];
 }
 
 - (void)didReceiveMemoryWarning
