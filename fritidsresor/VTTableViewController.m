@@ -54,6 +54,18 @@
     }];
 }
 
+- (NSString *)getDate:(NSString *)date:(NSString *)format
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSString *noColons = [date stringByReplacingOccurrencesOfString:@":" withString:@""];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HHmmss.SSSZZZ"];
+    NSDate *dateObj = [dateFormatter dateFromString:noColons];
+    [dateFormatter setDateFormat:format];
+    NSString *newDate = [dateFormatter stringFromDate:dateObj];
+    NSLog(@"%@: %@", format, newDate);
+    return newDate;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -82,8 +94,18 @@
     VTCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     NSDictionary *dict = [self.apiData objectAtIndex:indexPath.row];
+    
+    // price
     cell.priceLabel.text = [NSString stringWithFormat:@"%@:-", [[dict valueForKey:@"price"] stringValue]];
+    
+    // room description
     cell.travelTypeLabel.text = [dict valueForKey:@"roomDesc"];
+    
+    // date (month)
+    cell.monthLabel.text = [self getDate:[dict valueForKey:@"date"]:@"MMM"];
+    
+    // date (day)
+    cell.dayLabel.text = [self getDate:[dict valueForKey:@"date"]:@"dd"];
     
     return cell;
 }
