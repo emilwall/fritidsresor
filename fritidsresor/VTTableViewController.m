@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self callApi:@"airports"];
+    [self callApi:@"offers/from/stockholm/arlanda"];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -42,7 +42,7 @@
         self.apiData = [[NSMutableArray alloc] init];
         for (NSDictionary *dict in responseObject) {
             [self.apiData addObject:dict];
-            NSLog(@"%@ -> %@", [dict valueForKey:@"code"], [dict valueForKey:@"name"]);
+            NSLog(@"%@ -> %@", [dict valueForKey:@"price"], [dict valueForKey:@"destination"]);
         }
         [self.tableView reloadData];
         NSLog(@"Success");
