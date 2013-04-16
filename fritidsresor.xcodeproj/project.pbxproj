@@ -137,6 +137,7 @@
 		AE3AFF4A171D64DF000D6F79 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFF41171D64DF000D6F79 /* UIImageView+AFNetworking.m */; };
 		AE3AFF4C171D650E000D6F79 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3AFF4B171D650E000D6F79 /* MobileCoreServices.framework */; };
 		AE3AFF4E171D6515000D6F79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3AFF4D171D6515000D6F79 /* SystemConfiguration.framework */; };
+		AE3AFF52171D660D000D6F79 /* VTLastMinuteApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = AE3AFF51171D660D000D6F79 /* VTLastMinuteApiClient.m */; };
 		CF2A6127171C3F3100641D2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6126171C3F3100641D2D /* UIKit.framework */; };
 		CF2A6129171C3F3200641D2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A6128171C3F3100641D2D /* Foundation.framework */; };
 		CF2A612B171C3F3200641D2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A612A171C3F3200641D2D /* CoreGraphics.framework */; };
@@ -288,6 +289,8 @@
 		AE3AFF41171D64DF000D6F79 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "Vendor/AFNetworking/AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		AE3AFF4B171D650E000D6F79 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AE3AFF4D171D6515000D6F79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AE3AFF50171D660D000D6F79 /* VTLastMinuteApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTLastMinuteApiClient.h; sourceTree = "<group>"; };
+		AE3AFF51171D660D000D6F79 /* VTLastMinuteApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTLastMinuteApiClient.m; sourceTree = "<group>"; };
 		CF2A6123171C3F3100641D2D /* fritidsresor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fritidsresor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A6126171C3F3100641D2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF2A6128171C3F3100641D2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -313,6 +316,7 @@
 		AE3AFAF1171C4C26000D6F79 /* fritidsresor */ = {
 			isa = PBXGroup;
 			children = (
+				AE3AFF4F171D65D6000D6F79 /* Communication */,
 				AE3AFAF2171C4C26000D6F79 /* Default-568h@2x.png */,
 				AE3AFAF3171C4C26000D6F79 /* Default.png */,
 				AE3AFAF4171C4C26000D6F79 /* Default@2x.png */,
@@ -329,6 +333,7 @@
 				AE3AFD91171C584D000D6F79 /* VTCell.m */,
 				AE3AFD93171C5ADA000D6F79 /* VTTableViewController.h */,
 				AE3AFD94171C5ADA000D6F79 /* VTTableViewController.m */,
+				AE3AFEC1171D64B7000D6F79 /* AFNetworking */,
 				AE3AFAFB171C4C26000D6F79 /* Images */,
 			);
 			path = fritidsresor;
@@ -473,12 +478,21 @@
 				AE3AFF41171D64DF000D6F79 /* UIImageView+AFNetworking.m */,
 			);
 			name = AFNetworking;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		AE3AFF4F171D65D6000D6F79 /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				AE3AFF50171D660D000D6F79 /* VTLastMinuteApiClient.h */,
+				AE3AFF51171D660D000D6F79 /* VTLastMinuteApiClient.m */,
+			);
+			name = Communication;
 			sourceTree = "<group>";
 		};
 		CF2A611A171C3F3100641D2D = {
 			isa = PBXGroup;
 			children = (
-				AE3AFEC1171D64B7000D6F79 /* AFNetworking */,
 				AE3AFAF1171C4C26000D6F79 /* fritidsresor */,
 				CF2A6125171C3F3100641D2D /* Frameworks */,
 				CF2A6124171C3F3100641D2D /* Products */,
@@ -695,6 +709,7 @@
 				AE3AFF48171D64DF000D6F79 /* AFURLConnectionOperation.m in Sources */,
 				AE3AFF49171D64DF000D6F79 /* AFXMLRequestOperation.m in Sources */,
 				AE3AFF4A171D64DF000D6F79 /* UIImageView+AFNetworking.m in Sources */,
+				AE3AFF52171D660D000D6F79 /* VTLastMinuteApiClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
