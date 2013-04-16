@@ -95,6 +95,9 @@
     
     NSDictionary *dict = [self.apiData objectAtIndex:indexPath.row];
     
+    // Every other (varannan) should have different background
+    cell.contentView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed: (indexPath.row % 2 == 0) ? @"paper.png" : @"paper_blue.png"]];
+    
     // price
     cell.priceLabel.text = [NSString stringWithFormat:@"%@:-", [[dict valueForKey:@"price"] stringValue]];
     
