@@ -24,4 +24,6 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *alertLabel;
 
+@property (nonatomic, strong) IBOutlet UIImageView *alertImage;
+
 @end

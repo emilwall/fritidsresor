@@ -107,6 +107,18 @@
     // date (day)
     cell.dayLabel.text = [self getDate:[dict valueForKey:@"date"]:@"dd"];
     
+    // destination
+    cell.countryLabel.text = [dict valueForKey:@"destination"];
+    
+    // alert if less than 3 remaining
+    if ([[dict valueForKey:@"remaining"] integerValue] > 2) {
+        cell.alertLabel.text = @"";
+        cell.alertImage.hidden = TRUE;
+    } else {
+        cell.alertLabel.text = [NSString stringWithFormat:@"%@ kvar", [[dict valueForKey:@"remaining"] stringValue]];
+        cell.alertImage.hidden = FALSE;
+    }
+    
     return cell;
 }
 

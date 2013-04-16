@@ -23,7 +23,7 @@
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Teneriffa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ban-iy-2hq">
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="0rE-y7-Ef2"/>
-                                                <constraint firstAttribute="width" constant="69" id="rFT-UH-Ltc"/>
+                                                <constraint firstAttribute="width" constant="192" id="e2a-zg-CbT"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -126,6 +126,7 @@
                                     <constraint firstItem="1id-ZJ-1WX" firstAttribute="top" secondItem="e9R-SJ-eUw" secondAttribute="top" constant="14" id="z2J-dc-oD2"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="alertImage" destination="gtt-SX-UP5" id="br0-LK-Eol"/>
                                     <outlet property="alertLabel" destination="T8v-j8-7gR" id="g4S-NB-hQt"/>
                                     <outlet property="countryLabel" destination="Ban-iy-2hq" id="v1r-5e-izn"/>
                                     <outlet property="dayLabel" destination="1id-ZJ-1WX" id="NvA-gP-cF9"/>
@@ -249,8 +250,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BfA-7D-NLa" kind="relationship" relationship="viewControllers" id="bfB-at-sBh"/>
                         <segue destination="xbP-pE-Gce" kind="relationship" relationship="viewControllers" id="dsq-IO-GnQ"/>
+                        <segue destination="BfA-7D-NLa" kind="relationship" relationship="viewControllers" id="bfB-at-sBh"/>
                         <segue destination="5Gq-It-ZsW" kind="relationship" relationship="viewControllers" id="vBz-cY-cMo"/>
                     </connections>
                 </tabBarController>
@@ -274,6 +275,7 @@
         <class className="VTCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VTCell.h"/>
             <relationships>
+                <relationship kind="outlet" name="alertImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="alertLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="countryLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="dayLabel" candidateClass="UILabel"/>
