@@ -27,6 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.apiData = [[NSMutableDictionary alloc] init];
     [self callApi:@"offers/from/stockholm/arlanda"];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -39,9 +40,9 @@
 - (void)callApi:(NSString *)selector
 {
     [[VTLastMinuteApiClient sharedClient] getPath:selector parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        self.apiData = [[NSMutableArray alloc] init];
+        [self.apiData setValue:[[NSMutableArray alloc] initWithCapacity:[responseObject count]] forKey:selector];
         for (NSDictionary *dict in responseObject) {
-            [self.apiData addObject:dict];
+            [[self.apiData valueForKey:selector] addObject:dict];
             NSLog(@"%@ -> %@", [dict valueForKey:@"price"], [dict valueForKey:@"destination"]);
         }
         [self.tableView reloadData];
@@ -68,7 +69,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"%lu", (unsigned long)[self.apiData count]);
+    NSLog(@"%lu", (unsigned long)[[self.apiData valueForKey:@"offers/from/stockholm/arlanda"] count]);
     return [self.apiData count];
 }
 
