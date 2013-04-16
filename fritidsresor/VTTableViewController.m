@@ -8,8 +8,11 @@
 
 #import "VTTableViewController.h"
 #import "VTLastMinuteApiClient.h"
+#import "VTCell.h"
 
 @interface VTTableViewController ()
+
+@property (nonatomic, strong) NSMutableDictionary *apiData;
 
 @end
 
@@ -69,16 +72,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    NSLog(@"%lu", (unsigned long)[[self.apiData valueForKey:@"offers/from/stockholm/arlanda"] count]);
-    return [self.apiData count];
+    unsigned long numRows = (unsigned long)[[self.apiData valueForKey:@"offers/from/stockholm/arlanda"] count];
+    NSLog(@"%lu", numRows);
+    return numRows;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (VTCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    VTCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSDictionary *dict = [[self.apiData valueForKey:@"offers/from/stockholm/arlanda"] objectAtIndex:indexPath.row];
+    cell.priceLabel.text = [[dict valueForKey:@"price"] stringValue];
     
     return cell;
 }
