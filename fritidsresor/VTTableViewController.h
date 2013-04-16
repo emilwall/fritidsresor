@@ -10,4 +10,6 @@
 
 @interface VTTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *apiData;
+
 @end

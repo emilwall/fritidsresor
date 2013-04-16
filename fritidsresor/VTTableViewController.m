@@ -39,9 +39,12 @@
 - (void)callApi:(NSString *)selector
 {
     [[VTLastMinuteApiClient sharedClient] getPath:selector parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        self.apiData = [[NSMutableArray alloc] init];
         for (NSDictionary *dict in responseObject) {
+            [self.apiData addObject:dict];
             NSLog(@"%@ -> %@", [dict valueForKey:@"code"], [dict valueForKey:@"name"]);
         }
+        [self.tableView reloadData];
         NSLog(@"Success");
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Fail");
@@ -65,7 +68,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 12;
+    NSLog(@"%lu", (unsigned long)[self.apiData count]);
+    return [self.apiData count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
