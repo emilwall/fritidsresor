@@ -12,7 +12,7 @@
 
 @interface VTTableViewController ()
 
-@property (nonatomic, strong) NSMutableDictionary *apiData;
+@property (nonatomic, strong) NSMutableArray *apiData;
 
 @end
 
@@ -30,7 +30,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.apiData = [[NSMutableDictionary alloc] init];
     [self callApi:@"offers/from/stockholm/arlanda"];
 
     // Uncomment the following line to preserve selection between presentations.
@@ -43,9 +42,9 @@
 - (void)callApi:(NSString *)selector
 {
     [[VTLastMinuteApiClient sharedClient] getPath:selector parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [self.apiData setValue:[[NSMutableArray alloc] initWithCapacity:[responseObject count]] forKey:selector];
+        self.apiData = [[NSMutableArray alloc] initWithCapacity:[responseObject count]];
         for (NSDictionary *dict in responseObject) {
-            [[self.apiData valueForKey:selector] addObject:dict];
+            [self.apiData addObject:dict];
             NSLog(@"%@ -> %@", [dict valueForKey:@"price"], [dict valueForKey:@"destination"]);
         }
         [self.tableView reloadData];
@@ -72,7 +71,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    unsigned long numRows = (unsigned long)[[self.apiData valueForKey:@"offers/from/stockholm/arlanda"] count];
+    unsigned long numRows = (unsigned long)[self.apiData count];
     NSLog(@"%lu", numRows);
     return numRows;
 }
@@ -82,8 +81,9 @@
     static NSString *CellIdentifier = @"Cell";
     VTCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSDictionary *dict = [[self.apiData valueForKey:@"offers/from/stockholm/arlanda"] objectAtIndex:indexPath.row];
-    cell.priceLabel.text = [[dict valueForKey:@"price"] stringValue];
+    NSDictionary *dict = [self.apiData objectAtIndex:indexPath.row];
+    cell.priceLabel.text = [NSString stringWithFormat:@"%@:-", [[dict valueForKey:@"price"] stringValue]];
+    cell.travelTypeLabel.text = [dict valueForKey:@"roomDesc"];
     
     return cell;
 }

@@ -35,6 +35,9 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Endast flyg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw7-vC-iJ6">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="198" id="fYf-ip-aVr"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,12 +102,12 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
+                                    <constraint firstItem="gtt-SX-UP5" firstAttribute="leading" secondItem="dw7-vC-iJ6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="07L-kV-OJl"/>
                                     <constraint firstItem="TtI-oS-FjG" firstAttribute="leading" secondItem="1id-ZJ-1WX" secondAttribute="leading" type="default" id="28J-oe-zfl"/>
                                     <constraint firstItem="1id-ZJ-1WX" firstAttribute="centerX" secondItem="yf4-st-oMy" secondAttribute="centerX" type="default" id="B0W-hs-i51"/>
                                     <constraint firstItem="TtI-oS-FjG" firstAttribute="bottom" secondItem="dw7-vC-iJ6" secondAttribute="bottom" type="default" id="JL2-Rt-CyB"/>
                                     <constraint firstItem="yf4-st-oMy" firstAttribute="top" secondItem="e9R-SJ-eUw" secondAttribute="top" constant="3" id="Jos-XG-Zgo"/>
                                     <constraint firstItem="1id-ZJ-1WX" firstAttribute="trailing" secondItem="TtI-oS-FjG" secondAttribute="trailing" type="default" id="QaC-Z0-Tbw"/>
-                                    <constraint firstItem="dw7-vC-iJ6" firstAttribute="trailing" secondItem="Ban-iy-2hq" secondAttribute="trailing" type="default" id="RgY-rz-NWx"/>
                                     <constraint firstItem="gtt-SX-UP5" firstAttribute="top" secondItem="e9R-SJ-eUw" secondAttribute="top" type="default" id="Sd3-N5-5ow"/>
                                     <constraint firstItem="TtI-oS-FjG" firstAttribute="leading" secondItem="e9R-SJ-eUw" secondAttribute="leading" constant="11" id="Shx-pp-FG9"/>
                                     <constraint firstItem="Dt8-XZ-uD5" firstAttribute="leading" secondItem="1id-ZJ-1WX" secondAttribute="leading" type="default" id="TdI-IR-ANR"/>
@@ -113,7 +116,6 @@
                                     <constraint firstItem="Dt8-XZ-uD5" firstAttribute="top" secondItem="1id-ZJ-1WX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="X31-eh-S1f"/>
                                     <constraint firstItem="dw7-vC-iJ6" firstAttribute="centerY" secondItem="e9R-SJ-eUw" secondAttribute="centerY" type="default" id="XHo-6N-3tV"/>
                                     <constraint firstAttribute="trailing" secondItem="sW1-Zd-6l6" secondAttribute="trailing" constant="6" id="b0y-w0-hFD"/>
-                                    <constraint firstItem="Ban-iy-2hq" firstAttribute="leading" secondItem="e9R-SJ-eUw" secondAttribute="leading" constant="67" id="eUf-bP-xmM"/>
                                     <constraint firstItem="dw7-vC-iJ6" firstAttribute="leading" secondItem="Ban-iy-2hq" secondAttribute="leading" type="default" id="fYb-cx-NQF"/>
                                     <constraint firstItem="1id-ZJ-1WX" firstAttribute="top" secondItem="sW1-Zd-6l6" secondAttribute="top" type="default" id="flf-pK-YCb"/>
                                     <constraint firstItem="dz5-TI-ETf" firstAttribute="trailing" secondItem="sW1-Zd-6l6" secondAttribute="trailing" type="default" id="lSs-4S-dXB"/>
